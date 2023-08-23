@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from . import forms
 from django.urls import reverse_lazy
 
+
 class SignupView(CreateView):
     """会員登録"""
 

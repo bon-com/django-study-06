@@ -65,13 +65,13 @@ WSGI_APPLICATION = "photoproject.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'study09_photo_project',  # 使用するデータベース名
-        'USER': 'hoge',  # データベースのユーザー名
-        'PASSWORD': 'password01',  # ユーザーのパスワード
-        'HOST': 'localhost',  # データベースサーバのホスト名またはIPアドレス
-        'PORT': '3306',  # データベースサーバのポート番号（MySQLのデフォルトは3306）
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "study09_photo_project",  # 使用するデータベース名
+        "USER": "hoge",  # データベースのユーザー名
+        "PASSWORD": "password01",  # ユーザーのパスワード
+        "HOST": "localhost",  # データベースサーバのホスト名またはIPアドレス
+        "PORT": "3306",  # データベースサーバのポート番号（MySQLのデフォルトは3306）
     }
 }
 
@@ -114,7 +114,7 @@ STATIC_URL = "static/"
 
 # プロジェクト直下のstaticフォルダ配下を参照するための設定
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    BASE_DIR / "static",
 ]
 
 # Default primary key field type
