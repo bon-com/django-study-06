@@ -124,3 +124,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Userモデルの代わりにCustomUserモデルで代用
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+# ログイン後のリダイレクト先
+LOGIN_REDIRECT_URL = "photo:index"
+
+# ログアウト後のリダイレクト先
+LOGOUT_REDIRECT_URL = "accounts:login"

@@ -51,8 +51,15 @@
             <h4>Contact</h4>
             <ul class="list-unstyled">
               <!-- ナビゲーションメニュー -->
+              {% if user.is_authenticated %}
+              <!-- ログイン済 -->
+              <li><a href="#" class="text-white">マイページ</a></li>
+              <li><a href="{% url 'accounts:logout' %}" class="text-white">ログアウト</a></li>
+              {% else %}
+              <!-- 未ログイン -->
               <li><a href="{% url 'accounts:signup' %}" class="text-white">サインアップ</a></li>
-              <li><a href="#" class="text-white">ログイン</a></li>
+              <li><a href="{% url 'accounts:login' %}" class="text-white">ログイン</a></li>
+              {% endif %}
               <li><a href="#" class="text-white">Email me</a></li>
             </ul>
           </div>
